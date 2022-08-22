@@ -1,5 +1,6 @@
 import React from "react";
 import Injun from "../../commons/img/injun.jpg";
+import Github from "../../commons/img/github.png";
 import {
   HeaderArea,
   HeaderWrapper,
@@ -10,8 +11,8 @@ import {
   Mainmeun,
   Headerbtn,
   LogoWrapper,
-  LogoTitle,
 } from "./styles";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -19,51 +20,56 @@ const Header = () => {
       <HeaderWrapper>
         <HeaderLeft>
           <LogoWrapper>
-            <a href="/">
+            <Link to="/">
               <Logo src={Injun}></Logo>
-            </a>
+            </Link>
           </LogoWrapper>
         </HeaderLeft>
         <HeaderRight>
           <Mainmeun>
             <Menu>
               <li>
-                <a href="/">HOME</a>
+                <Link to="/">HOME</Link>
+              </li>
+              <li>
+                <Link to="/intro">INTRO</Link>
+              </li>
+              <li>
+                <Link to="/">CAREER</Link>
                 <ul>
                   <li>
-                    <a href="/">Main Demo</a>
+                    <Link to="/">모빌씨앤씨</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="/">이것저것</a>
+                <Link to="/">PROJECT</Link>
                 <ul>
                   <li>
-                    <a href="/">Main Demo</a>
+                    <Link to="/">아모스</Link>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <a href="/">테스트용</a>
-                <ul>
                   <li>
-                    <a href="/">Main Demo</a>
+                    <Link to="/">아모레</Link>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <a href="/">메뉴에용</a>
-                <ul>
                   <li>
-                    <a href="/">Main Demo</a>
+                    <Link to="/">아이리스</Link>
                   </li>
                 </ul>
               </li>
             </Menu>
           </Mainmeun>
           <Headerbtn>
-            <a href="/">
-              <span>로그인</span>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Min-Jihong/ijh_project"
+            >
+              <img
+                style={{ verticalAlign: "middle", width: "30px" }}
+                src={Github}
+                alt="깃헙"
+              ></img>
+              <span>Git Hub</span>
             </a>
           </Headerbtn>
         </HeaderRight>

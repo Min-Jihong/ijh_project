@@ -77,7 +77,7 @@ export const Menu = styled.ul`
         a {
           font-size: 16px;
           font-weight: 500;
-          padding: 5px 20px;
+          padding: 5px;
           font-size: 14px;
           display: block;
           color: #1f1f25;
@@ -115,9 +115,9 @@ export const Menu = styled.ul`
 `;
 
 export const Headerbtn = styled.div`
-  margin-left: 50px;
+  margin-left: 30px;
   > a {
-    padding: 0 25px;
+    padding: 0 15px 0 10px;
     height: 46px;
     display: inline-block;
     line-height: 42px;
