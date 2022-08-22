@@ -19,22 +19,29 @@ export const Title = styled.h1`
   font-size: 90px;
   line-height: 100px;
   text-transform: uppercase;
+  margin-top: 0px;
 `;
 
 export const Contents = styled.div`
   box-sizing: border-box;
+  text-align: center;
 `;
 
 export const Contlist = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 `;
 
 export const List = styled.div`
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+  flex: 0 0 32%;
+  max-width: 32%;
+  margin: 0px 10px 0px 10px;
+  border: 2px outset #c6c9d8;
+  border-radius: 10px;
+  word-wrap: break-word;
+  &:last-of-type {
+    margin-right: 0;
+  }
 `;
 
 export const Icon = styled.div`
@@ -44,8 +51,14 @@ export const Icon = styled.div`
 export const ListInfo = styled.div`
   > h4 {
     color: #fff;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   > p {
+    padding-left: 20px;
+    padding-right: 20px;
     color: #c6c9d8;
+    opacity: 0.75;
   }
 `;

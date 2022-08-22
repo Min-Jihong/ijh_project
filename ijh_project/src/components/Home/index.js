@@ -22,34 +22,40 @@ const Home = () => {
           <List>
             <Icon>
               <DirectionsRunIcon
-                sx={{ color: "#ac0404", fontSize: 30, marginBottom: "34px" }}
+                sx={{ color: "#ac0404", fontSize: 100, marginBottom: "34px" }}
               />
             </Icon>
             <ListInfo>
-              <h4>Continuation</h4>
-              <p>asfsdafasfsfasfasfas</p>
+              <h4>continuation</h4>
+              <p>
+                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+              </p>
             </ListInfo>
           </List>
           <List>
             <Icon>
               <PersonAddIcon
-                sx={{ color: "#ac0404", fontSize: 30, marginBottom: "34px" }}
+                sx={{ color: "#ac0404", fontSize: 100, marginBottom: "34px" }}
               />
             </Icon>
             <ListInfo>
               <h4>Relationship</h4>
-              <p>asfsdafasfsfasfasfas</p>
+              <p>
+                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+              </p>
             </ListInfo>
           </List>
           <List>
             <Icon>
               <DirectionsRunIcon
-                sx={{ color: "#ac0404", fontSize: 30, marginBottom: "34px" }}
+                sx={{ color: "#ac0404", fontSize: 100, marginBottom: "34px" }}
               />
             </Icon>
             <ListInfo>
               <h4>test</h4>
-              <p>asfsdafasfsfasfasfas</p>
+              <p>
+                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+              </p>
             </ListInfo>
           </List>
         </Contlist>
