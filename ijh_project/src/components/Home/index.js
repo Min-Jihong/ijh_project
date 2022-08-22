@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import {
@@ -12,6 +12,24 @@ import {
 } from "./styles";
 
 const Home = () => {
+  const data = [
+    {
+      header: "continuation",
+      content:
+        "테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트",
+    },
+    {
+      header: "Relationship",
+      content:
+        "테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트",
+    },
+    {
+      header: "test",
+      content:
+        "테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트",
+    },
+  ];
+
   return (
     <Body>
       <Title>
@@ -19,45 +37,45 @@ const Home = () => {
       </Title>
       <Contents>
         <Contlist>
-          <List>
-            <Icon>
-              <DirectionsRunIcon
-                sx={{ color: "#ac0404", fontSize: 100, marginBottom: "34px" }}
-              />
-            </Icon>
-            <ListInfo>
-              <h4>continuation</h4>
-              <p>
-                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
-              </p>
-            </ListInfo>
-          </List>
-          <List>
-            <Icon>
-              <PersonAddIcon
-                sx={{ color: "#ac0404", fontSize: 100, marginBottom: "34px" }}
-              />
-            </Icon>
-            <ListInfo>
-              <h4>Relationship</h4>
-              <p>
-                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
-              </p>
-            </ListInfo>
-          </List>
-          <List>
-            <Icon>
-              <DirectionsRunIcon
-                sx={{ color: "#ac0404", fontSize: 100, marginBottom: "34px" }}
-              />
-            </Icon>
-            <ListInfo>
-              <h4>test</h4>
-              <p>
-                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
-              </p>
-            </ListInfo>
-          </List>
+          {data.map((item, idx) => {
+            return (
+              <List key={idx}>
+                <Icon>
+                  {!idx && (
+                    <DirectionsRunIcon
+                      sx={{
+                        color: "#616161",
+                        fontSize: 100,
+                        marginBottom: "34px",
+                      }}
+                    />
+                  )}
+                  {idx === 1 && (
+                    <PersonAddIcon
+                      sx={{
+                        color: "#616161",
+                        fontSize: 100,
+                        marginBottom: "34px",
+                      }}
+                    />
+                  )}
+                  {idx === 2 && (
+                    <PersonAddIcon
+                      sx={{
+                        color: "#616161",
+                        fontSize: 100,
+                        marginBottom: "34px",
+                      }}
+                    />
+                  )}
+                </Icon>
+                <ListInfo>
+                  <h4>{item.header}</h4>
+                  <p>{item.content}</p>
+                </ListInfo>
+              </List>
+            );
+          })}
         </Contlist>
       </Contents>
     </Body>

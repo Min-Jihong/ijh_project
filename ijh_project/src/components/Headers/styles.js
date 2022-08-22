@@ -1,9 +1,11 @@
 import styled from "@emotion/styled";
 
 export const HeaderArea = styled.header`
-  background-color: black;
+  background: #757f9a;
   padding-left: 30px;
   padding-right: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -25,6 +27,7 @@ export const LogoWrapper = styled.div`
     width: 80px;
     height: 80px;
     overflow: hidden;
+    border: 2px solid #c6c9d8;
     border-radius: 50%;
   }
 `;
@@ -67,8 +70,9 @@ export const Menu = styled.ul`
       left: 0;
       z-index: 90;
       opacity: 0;
+      list-style: none;
       visibility: hidden;
-      background-color: #fff;
+      background-color: #dbe6f6;
       box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
       text-align: left;
       padding: 12px 0;
@@ -86,8 +90,8 @@ export const Menu = styled.ul`
         }
         &:hover {
           a {
-            color: #f81f01;
-            background: rgba(249, 0, 77, 0.07);
+            color: #fff;
+            background: #bdc3c7;
           }
         }
       }
@@ -96,12 +100,13 @@ export const Menu = styled.ul`
       > ul {
         opacity: 1;
         visibility: visible;
+        border-radius: 2px output;
       }
     }
 
     &:hover {
       > a {
-        color: #f81f01;
+        color: #fff;
         text-decoration: none;
       }
     }
@@ -121,7 +126,7 @@ export const Headerbtn = styled.div`
     height: 46px;
     display: inline-block;
     line-height: 42px;
-    border: 2px solid #b1b4c1;
+    border: 2px solid #c6c9d8;
     border-radius: 6px;
     color: #c6c9d8;
     font-size: 14px;

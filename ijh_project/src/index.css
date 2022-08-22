@@ -14,7 +14,7 @@ body {
   color: #1d1d24;
   font-family: GongGothicLight;
   font-weight: 400;
-  background-color: #00010c;
+  background-color: #757F9A;
 }
 
 @font-face {
@@ -24,6 +24,8 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
