@@ -1,3 +1,3 @@
 # ijh_project
 
-# 개발 기술 스택 react / emotion /
+# 인준이 이직 관련 프론트 화면 
